@@ -1,18 +1,10 @@
-mynum = 10
-mystr = list('10')
-mynum2 = 0
-for i in range(len(mystr)):
-    mynum2 += int(mystr[i])
-print(mynum%mynum2)    
-print(mystr)
-
 def solution(x):
-    myStr = list(str(x))
-    myNum = x
-    myNum2 = 0
-    for i in range(len(myStr)):
-        myNum2 += int(myStr[i])
-    return myNum % myNum2 == 0
+    myStr = list(str(x)) # 10 -> ['1', '0']
+    myNum = x   # x = 10
+    myNum2 = 0  # 0
+    for i in range(len(myStr)): # 0, 1
+        myNum2 += int(myStr[i]) # +1, +0
+    return myNum % myNum2 == 0 # 10 % 1 == 0
 
 print(solution(10)) # True
 print(solution(12)) # True
