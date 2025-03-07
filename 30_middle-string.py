@@ -19,10 +19,11 @@ print(solution("qwer")) # we
 
 def solution2(s):
     char_list = list(s)  # Convert string to a list
-    print(f'char_list: {char_list}')
+    print(f'initial char_list: {char_list}')
     
     while len(char_list) > 2:  # Continue until only 1 or 2 elements are left
-        print(f'Before removing: {char_list}')
+        print(f'==========================================')
+        print(f'Before removing digits: {char_list}')
         char_list.pop(0)  # Remove first element
         print(f'After removing first: {char_list}')
         char_list.pop(-1)  # Remove last element
